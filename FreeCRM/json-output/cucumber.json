@@ -1,0 +1,536 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 53034456634,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepLogin.init()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User can login into Free CRM using valid credential",
+        "description": "",
+        "id": "free-crm-login;user-can-login-into-free-crm-using-valid-credential;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3279288093,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepLogin.EndSCript()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 34985793479,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user standing into login page",
+            "match": {
+              "location": "StepLogin.user_standing_into_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7749486959,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "for successful search enter user details as \"nivmother@gmail.com\" and \"Test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nivmother@gmail.com",
+                  "offset": 45
+                },
+                {
+                  "val": "Test@123",
+                  "offset": 71
+                }
+              ],
+              "location": "StepLogin.for_successful_search_enter_user_details_as_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40211458,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user successfully Login into Home page",
+            "match": {
+              "location": "StepLogin.user_successfully_Login_into_Home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 29492745124,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepLogin.init()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "User can\u0027t login into Free CRM using invalid credential",
+        "description": "",
+        "id": "free-crm-login;user-can\u0027t-login-into-free-crm-using-invalid-credential;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1694420069,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepLogin.EndSCript()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 31028747995,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user standing into login page",
+            "match": {
+              "location": "StepLogin.user_standing_into_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7655061385,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "for unsuccessful search enter user details as \"nivmother@gmail.com\" and \"Test@12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nivmother@gmail.com",
+                  "offset": 47
+                },
+                {
+                  "val": "Test@12",
+                  "offset": 73
+                }
+              ],
+              "location": "StepLogin.enter_user_details_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73708,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user remain in Login page",
+            "match": {
+              "location": "StepLogin.user_remain_in_Login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1752174970,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User received error message as Something went Wrong and \"Invalid login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid login",
+                  "offset": 57
+                }
+              ],
+              "location": "StepLogin.user_received_an_error(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 16284319365,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepLogin.init()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "User can\u0027t login into Free CRM using invalid credential",
+        "description": "",
+        "id": "free-crm-login;user-can\u0027t-login-into-free-crm-using-invalid-credential;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1112447652,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepLogin.EndSCript()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 35937411626,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user standing into login page",
+            "match": {
+              "location": "StepLogin.user_standing_into_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9795356208,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "for unsuccessful search enter user details as \"nivmother@gmail.com\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nivmother@gmail.com",
+                  "offset": 47
+                },
+                {
+                  "val": "",
+                  "offset": 73
+                }
+              ],
+              "location": "StepLogin.enter_user_details_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52716,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user remain in Login page",
+            "match": {
+              "location": "StepLogin.user_remain_in_Login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 135065752,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User received error message as Something went Wrong and \"Invalid request\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid request",
+                  "offset": 57
+                }
+              ],
+              "location": "StepLogin.user_received_an_error(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15559692068,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepLogin.init()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "User can\u0027t login into Free CRM using invalid credential",
+        "description": "",
+        "id": "free-crm-login;user-can\u0027t-login-into-free-crm-using-invalid-credential;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1190262331,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepLogin.EndSCript()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 28034923140,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user standing into login page",
+            "match": {
+              "location": "StepLogin.user_standing_into_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6376947956,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "for unsuccessful search enter user details as \"\" and \"Test@12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 47
+                },
+                {
+                  "val": "Test@12",
+                  "offset": 54
+                }
+              ],
+              "location": "StepLogin.enter_user_details_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55048,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user remain in Login page",
+            "match": {
+              "location": "StepLogin.user_remain_in_Login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 252015658,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User received error message as Something went Wrong and \"Invalid request\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid request",
+                  "offset": 57
+                }
+              ],
+              "location": "StepLogin.user_received_an_error(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13445801978,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepLogin.init()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "User can\u0027t login into Free CRM using invalid credential",
+        "description": "",
+        "id": "free-crm-login;user-can\u0027t-login-into-free-crm-using-invalid-credential;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1150367163,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepLogin.EndSCript()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 35253229041,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user standing into login page",
+            "match": {
+              "location": "StepLogin.user_standing_into_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8471662298,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "for unsuccessful search enter user details as \"\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 47
+                },
+                {
+                  "val": "",
+                  "offset": 54
+                }
+              ],
+              "location": "StepLogin.enter_user_details_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47117,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user remain in Login page",
+            "match": {
+              "location": "StepLogin.user_remain_in_Login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 201002243,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User received error message as Something went Wrong and \"Invalid request\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid request",
+                  "offset": 57
+                }
+              ],
+              "location": "StepLogin.user_received_an_error(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM Login",
+    "description": "",
+    "id": "free-crm-login",
+    "keyword": "Feature",
+    "uri": "/Users/SUJOY/workspace/FreeCRM/src/main/java/com/crm/qa/features/LoginFreeCRM.feature"
+  }
+]

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="343.913119">
+<testcase classname="Free CRM Login" name="User can login into Free CRM using valid credential" time="99.089237">
+<system-out><![CDATA[Given user standing into login page.........................................passed
+When for successful search enter user details as "nivmother@gmail.com" and "Test@123".passed
+Then user successfully Login into Home page.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Login" name="User can't login into Free CRM using invalid credential" time="71.623223">
+<system-out><![CDATA[Given user standing into login page.........................................passed
+When for unsuccessful search enter user details as "nivmother@gmail.com" and "Test@12".passed
+Then user remain in Login page..............................................passed
+And User received error message as Something went Wrong and "Invalid login".passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Login" name="User can't login into Free CRM using invalid credential 2" time="63.264653">
+<system-out><![CDATA[Given user standing into login page.........................................passed
+When for unsuccessful search enter user details as "nivmother@gmail.com" and "".passed
+Then user remain in Login page..............................................passed
+And User received error message as Something went Wrong and "Invalid request".passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Login" name="User can't login into Free CRM using invalid credential 3" time="51.413896">
+<system-out><![CDATA[Given user standing into login page.........................................passed
+When for unsuccessful search enter user details as "" and "Test@12".........passed
+Then user remain in Login page..............................................passed
+And User received error message as Something went Wrong and "Invalid request".passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Login" name="User can't login into Free CRM using invalid credential 4" time="58.52211">
+<system-out><![CDATA[Given user standing into login page.........................................passed
+When for unsuccessful search enter user details as "" and ""................passed
+Then user remain in Login page..............................................passed
+And User received error message as Something went Wrong and "Invalid request".passed
+]]></system-out>
+</testcase>
+</testsuite>
